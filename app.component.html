@@ -1,0 +1,44 @@
+<div class="container-fluid bg-CPE">
+    <nav class="navbar navbar-expand-md bg-CPE navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand btn btn-CPE" routerLink="home"> <img src="./../assets/icons/home/CPELOGO.png"
+                style="border-radius: 11px;">&nbsp; Computer Club</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a routerLink="home" class="btn btn-CPE">หน้าแรก</a>
+                </li>
+                &nbsp;
+                <li class="nav-item">
+                    <a routerLink="listmember" routerLinkActive="active"class="btn btn-CPE">สมาชิกชมรม</a>
+                </li>
+                &nbsp;
+                <li class="nav-item">
+                    <a routerLink="addmember" routerLinkActive="active" class="btn btn-CPE">สมัครสมาชิกชมรม</a>
+                </li>
+                &nbsp;
+                <li class="nav-item">
+                    <a class="btn btn-CPE">ล็อกอิน</a>
+                </li>
+                &nbsp;
+
+            </ul>
+        </div>
+
+    </nav>
+</div>
+
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<div class="container-fluid bg-dark" style="padding: 1.5rem 1rem ; color: white;">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            CopyRight by
+        </div>
+    </div>
+</div>

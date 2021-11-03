@@ -1,0 +1,29 @@
+<div class="text-center" style="font-size: 60px; font-weight: 700; padding-bottom: 2rem;">
+    ประชาสัมพันธ์
+</div>
+<div class="row" style="padding-top: 0.7rem; padding-left: 5rem; padding-right: 5rem;">
+    <div class="col-sm-4 text-center" *ngFor="let item of event; index as i">
+        <div class="card mb-3">
+            <div class="card-body ">
+
+                <div class="row">
+                    <div class="col-12">
+                        <img [src]="item.img" height="100px">
+                    </div>
+                    <div class="col-12 Header-text">
+                        {{item.title}}
+                    </div>
+                    <div class="col-12 subtitle-text">
+                        {{item.body}}
+                    </div>
+                    <div class="col-12 subtitle-text">
+                        <a [href]="item.urllink" target="_blank">{{item.urllink}}</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
